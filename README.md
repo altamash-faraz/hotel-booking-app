@@ -1,6 +1,44 @@
-# Setting Up the MERN Booking App
+# 🏨 MERN Booking App - Full Stack Hotel Booking Platform
 
-This guide will walk you through the process of setting up the MERN Booking App on your local machine.
+> **🚧 Currently Under Development** - This is my ongoing project to build a comprehensive hotel booking platform using the MERN stack.
+
+## 📋 Project Overview
+
+This is a full-featured hotel booking application that I'm actively developing to showcase modern web development skills. The project includes user authentication, hotel listings, booking management, payment processing, and comprehensive testing.
+
+### 🛠️ Tech Stack
+
+- **Frontend**: React + TypeScript + Vite
+- **Backend**: Node.js + Express.js
+- **Database**: MongoDB Atlas
+- **Authentication**: JWT
+- **File Upload**: Cloudinary
+- **Payments**: Stripe
+- **Testing**: Playwright (E2E)
+- **Styling**: Tailwind CSS
+
+### ✨ Current Features
+
+- ✅ User registration and authentication
+- ✅ Hotel search and filtering
+- ✅ Hotel booking system
+- ✅ Payment processing with Stripe
+- ✅ Image upload and management
+- ✅ Responsive design
+- ✅ End-to-end testing setup
+
+### 🎯 Planned Enhancements
+
+- 🔄 Admin dashboard for hotel management
+- 🔄 Advanced search filters
+- 🔄 User reviews and ratings
+- 🔄 Email notifications
+- 🔄 Mobile app version
+- 🔄 Performance optimizations
+
+---
+
+## 🚀 Quick Start Guide
 
 ## Prerequisites
 
