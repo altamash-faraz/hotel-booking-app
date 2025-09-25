@@ -1,40 +1,87 @@
 # 🏨 MERN Booking App - Full Stack Hotel Booking Platform
 
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
 > **🚧 Currently Under Development** - This is my ongoing project to build a comprehensive hotel booking platform using the MERN stack.
 
 ## 📋 Project Overview
 
 This is a full-featured hotel booking application that I'm actively developing to showcase modern web development skills. The project includes user authentication, hotel listings, booking management, payment processing, and comprehensive testing.
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-- **Frontend**: React + TypeScript + Vite
-- **Backend**: Node.js + Express.js
-- **Database**: MongoDB Atlas
-- **Authentication**: JWT
-- **File Upload**: Cloudinary
-- **Payments**: Stripe
-- **Testing**: Playwright (E2E)
-- **Styling**: Tailwind CSS
+### **Frontend**
+- **React 18** with **TypeScript** for type-safe component development
+- **Vite** for fast development and optimized builds
+- **Tailwind CSS** for responsive, modern UI design
+- **React Query** for efficient server state management
 
-### ✨ Current Features
+### **Backend**
+- **Node.js** with **Express.js** framework
+- **TypeScript** for type-safe server-side development
+- **JWT** for secure authentication
+- **Mongoose** for MongoDB object modeling
 
-- ✅ User registration and authentication
-- ✅ Hotel search and filtering
-- ✅ Hotel booking system
-- ✅ Payment processing with Stripe
-- ✅ Image upload and management
-- ✅ Responsive design
-- ✅ End-to-end testing setup
+### **Database & Services**
+- **MongoDB Atlas** for cloud database storage
+- **Cloudinary** for image upload and optimization
+- **Stripe** for secure payment processing
 
-### 🎯 Planned Enhancements
+### **Testing & DevOps**
+- **Playwright** for end-to-end testing
+- **ESLint** & **Prettier** for code quality
+- **Git** for version control
 
-- 🔄 Admin dashboard for hotel management
-- 🔄 Advanced search filters
-- 🔄 User reviews and ratings
-- 🔄 Email notifications
-- 🔄 Mobile app version
-- 🔄 Performance optimizations
+## ✨ Current Features
+
+- ✅ **User Management**
+  - User registration and authentication
+  - JWT-based secure sessions
+  - Profile management
+
+- ✅ **Hotel Management**
+  - Hotel creation and editing
+  - Multi-image upload with Cloudinary
+  - Advanced search and filtering
+  - Location-based search
+
+- ✅ **Booking System**
+  - Real-time availability checking
+  - Secure booking creation
+  - Booking history and management
+
+- ✅ **Payment Integration**
+  - Stripe payment processing
+  - Test and production environments
+  - Secure payment handling
+
+- ✅ **Responsive Design**
+  - Mobile-first approach
+  - Cross-browser compatibility
+  - Modern UI/UX patterns
+
+## 🎯 Planned Enhancements
+
+- 🔄 **Admin Dashboard** - Comprehensive management interface
+- 🔄 **Advanced Filters** - Price range, amenities, ratings
+- 🔄 **Review System** - User ratings and reviews
+- 🔄 **Notification System** - Email confirmations and reminders
+- 🔄 **Mobile App** - React Native implementation
+- 🔄 **Performance Optimization** - Caching and lazy loading
+- 🔄 **Multi-language Support** - Internationalization (i18n)
+
+## 📊 Project Stats
+
+- **Languages**: TypeScript, JavaScript, CSS
+- **Total Files**: 50+ components and modules
+- **Database Collections**: Users, Hotels, Bookings
+- **API Endpoints**: 15+ REST endpoints
+- **Test Coverage**: E2E tests with Playwright
 
 ---
 
