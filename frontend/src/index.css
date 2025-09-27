@@ -1,3 +1,111 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', 'system-ui', sans-serif;
+    background: linear-gradient(135deg, #fdf8f0 0%, #f0f9ff 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-ocean-gradient text-white px-6 py-3 rounded-lg font-semibold shadow-ocean hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-hotel-500 text-white px-6 py-3 rounded-lg font-semibold shadow-hotel hover:bg-hotel-600 hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-ocean-500 text-ocean-700 px-6 py-3 rounded-lg font-semibold hover:bg-ocean-500 hover:text-white transition-all duration-200;
+  }
+  
+  /* Card Styles */
+  .card {
+    @apply bg-white rounded-xl shadow-luxury p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .card-hotel {
+    @apply bg-white rounded-xl shadow-luxury border border-hotel-100 hover:shadow-xl hover:border-hotel-200 transition-all duration-300;
+  }
+  
+  /* Input Styles */
+  .input-hotel {
+    @apply w-full px-4 py-3 border border-luxury-300 rounded-lg focus:ring-2 focus:ring-hotel-400 focus:border-transparent bg-white/80 backdrop-blur-sm transition-all duration-200;
+  }
+  
+  /* Text Gradient Styles */
+  .text-gradient {
+    @apply bg-gradient-to-r from-hotel-600 to-ocean-600 bg-clip-text text-transparent;
+  }
+  
+  .text-luxury-gradient {
+    @apply bg-gradient-to-r from-luxury-800 to-ocean-800 bg-clip-text text-transparent;
+  }
+  
+  /* Navigation Styles */
+  .nav-link {
+    @apply text-white/90 hover:text-white px-4 py-2 rounded-lg font-medium hover:bg-white/10 backdrop-blur-sm transition-all duration-200;
+  }
+  
+  /* Hotel Card Facility Badge */
+  .facility-badge {
+    @apply bg-gradient-to-r from-hotel-100 to-ocean-100 text-luxury-700 px-3 py-1 rounded-full text-sm font-medium border border-hotel-200;
+  }
+}
+
+@layer utilities {
+  /* Backdrop Blur Utilities */
+  .backdrop-glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .backdrop-glass-dark {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Animation Utilities */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Gradient Text Utilities */
+  .gradient-text-hotel {
+    background: linear-gradient(135deg, #c4912f, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-hotel-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-hotel-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-hotel-400;
+}

@@ -7,54 +7,66 @@ type Props = {
 
 const SearchResultsCard = ({ hotel }: Props) => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-[2fr_3fr] border border-slate-300 rounded-lg p-8 gap-8">
-      <div className="w-full h-[300px]">
+    <div className="card-hotel grid grid-cols-1 xl:grid-cols-[2fr_3fr] p-6 gap-6 hover:scale-[1.02] transition-all duration-300">
+      <div className="w-full h-[300px] relative overflow-hidden rounded-xl group">
         <img
           src={hotel.imageUrls[0]}
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+          alt={hotel.name}
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
-      <div className="grid grid-rows-[1fr_2fr_1fr]">
+      <div className="grid grid-rows-[1fr_2fr_1fr] gap-4">
         <div>
-          <div className="flex items-center">
+          <div className="flex items-center mb-2">
             <span className="flex">
-              {Array.from({ length: hotel.starRating }).map(() => (
-                <AiFillStar className="fill-yellow-400" />
+              {Array.from({ length: hotel.starRating }).map((_, index) => (
+                <AiFillStar key={index} className="fill-hotel-400 w-5 h-5" />
               ))}
             </span>
-            <span className="ml-1 text-sm">{hotel.type}</span>
+            <span className="ml-2 text-sm font-medium text-luxury-600 bg-luxury-100 px-2 py-1 rounded-full">
+              {hotel.type}
+            </span>
           </div>
           <Link
             to={`/detail/${hotel._id}`}
-            className="text-2xl font-bold cursor-pointer"
+            className="text-xl md:text-2xl font-bold text-luxury-800 hover:text-ocean-700 cursor-pointer transition-colors duration-200 block"
           >
             {hotel.name}
           </Link>
         </div>
 
         <div>
-          <div className="line-clamp-4">{hotel.description}</div>
+          <div className="line-clamp-4 text-luxury-600 leading-relaxed">
+            {hotel.description}
+          </div>
         </div>
 
-        <div className="grid grid-cols-2 items-end whitespace-nowrap">
-          <div className="flex gap-1 items-center">
-            {hotel.facilities.slice(0, 3).map((facility) => (
-              <span className="bg-slate-300 p-2 rounded-lg font-bold text-xs whitespace-nowrap">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-end">
+          <div className="flex flex-wrap gap-2">
+            {hotel.facilities.slice(0, 3).map((facility, index) => (
+              <span key={index} className="facility-badge">
                 {facility}
               </span>
             ))}
-            <span className="text-sm">
-              {hotel.facilities.length > 3 &&
-                `+${hotel.facilities.length - 3} more`}
-            </span>
+            {hotel.facilities.length > 3 && (
+              <span className="text-sm text-luxury-500 font-medium">
+                +{hotel.facilities.length - 3} more
+              </span>
+            )}
           </div>
-          <div className="flex flex-col items-end gap-1">
-            <span className="font-bold">£{hotel.pricePerNight} per night</span>
+          <div className="flex flex-col lg:items-end gap-3">
+            <div className="text-right lg:text-right">
+              <span className="text-2xl font-bold gradient-text-hotel">
+                £{hotel.pricePerNight}
+              </span>
+              <span className="text-luxury-600 ml-1">per night</span>
+            </div>
             <Link
               to={`/detail/${hotel._id}`}
-              className="bg-blue-600 text-white h-full p-2 font-bold text-xl max-w-fit hover:bg-blue-500"
+              className="btn-primary text-center lg:max-w-fit px-8 py-3"
             >
-              View More
+              View Details
             </Link>
           </div>
         </div>

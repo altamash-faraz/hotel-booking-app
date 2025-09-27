@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { useMutation, useQueryClient } from "react-query";
 import * as apiClient from "../api-client";
 import { useAppContext } from "../contexts/AppContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export type RegisterFormData = {
   firstName: string;
@@ -40,86 +40,114 @@ const Register = () => {
   });
 
   return (
-    <form className="flex flex-col gap-5" onSubmit={onSubmit}>
-      <h2 className="text-3xl font-bold">Create an Account</h2>
-      <div className="flex flex-col md:flex-row gap-5">
-        <label className="text-gray-700 text-sm font-bold flex-1">
-          First Name
-          <input
-            className="border rounded w-full py-1 px-2 font-normal"
-            {...register("firstName", { required: "This field is required" })}
-          ></input>
-          {errors.firstName && (
-            <span className="text-red-500">{errors.firstName.message}</span>
-          )}
-        </label>
-        <label className="text-gray-700 text-sm font-bold flex-1">
-          Last Name
-          <input
-            className="border rounded w-full py-1 px-2 font-normal"
-            {...register("lastName", { required: "This field is required" })}
-          ></input>
-          {errors.lastName && (
-            <span className="text-red-500">{errors.lastName.message}</span>
-          )}
-        </label>
+    <div className="min-h-screen flex items-center justify-center py-12 px-4">
+      <div className="card max-w-2xl w-full p-8">
+        <form className="flex flex-col gap-6" onSubmit={onSubmit}>
+          <div className="text-center mb-4">
+            <h2 className="text-3xl font-bold gradient-text-hotel">Join MernHolidays</h2>
+            <p className="text-luxury-600 mt-2">Create your account to start booking amazing hotels</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <label className="text-luxury-700 text-sm font-semibold">
+              First Name
+              <input
+                className="input-hotel mt-2"
+                placeholder="Enter your first name"
+                {...register("firstName", { required: "First name is required" })}
+              />
+              {errors.firstName && (
+                <span className="text-sunset-500 text-sm mt-1 block">{errors.firstName.message}</span>
+              )}
+            </label>
+            <label className="text-luxury-700 text-sm font-semibold">
+              Last Name
+              <input
+                className="input-hotel mt-2"
+                placeholder="Enter your last name"
+                {...register("lastName", { required: "Last name is required" })}
+              />
+              {errors.lastName && (
+                <span className="text-sunset-500 text-sm mt-1 block">{errors.lastName.message}</span>
+              )}
+            </label>
+          </div>
+
+          <label className="text-luxury-700 text-sm font-semibold">
+            Email Address
+            <input
+              type="email"
+              className="input-hotel mt-2"
+              placeholder="Enter your email address"
+              {...register("email", { required: "Email is required" })}
+            />
+            {errors.email && (
+              <span className="text-sunset-500 text-sm mt-1 block">{errors.email.message}</span>
+            )}
+          </label>
+
+          <label className="text-luxury-700 text-sm font-semibold">
+            Password
+            <input
+              type="password"
+              className="input-hotel mt-2"
+              placeholder="Create a strong password"
+              {...register("password", {
+                required: "Password is required",
+                minLength: {
+                  value: 6,
+                  message: "Password must be at least 6 characters",
+                },
+              })}
+            />
+            {errors.password && (
+              <span className="text-sunset-500 text-sm mt-1 block">{errors.password.message}</span>
+            )}
+          </label>
+
+          <label className="text-luxury-700 text-sm font-semibold">
+            Confirm Password
+            <input
+              type="password"
+              className="input-hotel mt-2"
+              placeholder="Confirm your password"
+              {...register("confirmPassword", {
+                validate: (val) => {
+                  if (!val) {
+                    return "Please confirm your password";
+                  } else if (watch("password") !== val) {
+                    return "Passwords do not match";
+                  }
+                },
+              })}
+            />
+            {errors.confirmPassword && (
+              <span className="text-sunset-500 text-sm mt-1 block">{errors.confirmPassword.message}</span>
+            )}
+          </label>
+
+          <button
+            type="submit"
+            className="btn-primary w-full py-4 text-lg mt-4"
+            disabled={mutation.isLoading}
+          >
+            {mutation.isLoading ? "Creating Account..." : "Create Account"}
+          </button>
+
+          <div className="text-center">
+            <span className="text-luxury-600">
+              Already have an account?{" "}
+              <Link 
+                className="text-hotel-600 hover:text-hotel-700 font-semibold underline decoration-hotel-300 hover:decoration-hotel-500 transition-colors" 
+                to="/sign-in"
+              >
+                Sign in here
+              </Link>
+            </span>
+          </div>
+        </form>
       </div>
-      <label className="text-gray-700 text-sm font-bold flex-1">
-        Email
-        <input
-          type="email"
-          className="border rounded w-full py-1 px-2 font-normal"
-          {...register("email", { required: "This field is required" })}
-        ></input>
-        {errors.email && (
-          <span className="text-red-500">{errors.email.message}</span>
-        )}
-      </label>
-      <label className="text-gray-700 text-sm font-bold flex-1">
-        Password
-        <input
-          type="password"
-          className="border rounded w-full py-1 px-2 font-normal"
-          {...register("password", {
-            required: "This field is required",
-            minLength: {
-              value: 6,
-              message: "Password must be at least 6 characters",
-            },
-          })}
-        ></input>
-        {errors.password && (
-          <span className="text-red-500">{errors.password.message}</span>
-        )}
-      </label>
-      <label className="text-gray-700 text-sm font-bold flex-1">
-        Confirm Password
-        <input
-          type="password"
-          className="border rounded w-full py-1 px-2 font-normal"
-          {...register("confirmPassword", {
-            validate: (val) => {
-              if (!val) {
-                return "This field is required";
-              } else if (watch("password") !== val) {
-                return "Your passwords do no match";
-              }
-            },
-          })}
-        ></input>
-        {errors.confirmPassword && (
-          <span className="text-red-500">{errors.confirmPassword.message}</span>
-        )}
-      </label>
-      <span>
-        <button
-          type="submit"
-          className="bg-blue-600 text-white p-2 font-bold hover:bg-blue-500 text-xl"
-        >
-          Create Account
-        </button>
-      </span>
-    </form>
+    </div>
   );
 };
 

@@ -11,11 +11,20 @@ const Pagination = ({ page, pages, onPageChange }: Props) => {
   }
 
   return (
-    <div className="flex justify-center">
-      <ul className="flex border border-slate-300">
+    <div className="flex justify-center mt-8">
+      <ul className="flex gap-2">
         {pageNumbers.map((number) => (
-          <li className={`px-2 py-1 ${page === number ? "bg-gray-200" : ""}`}>
-            <button onClick={() => onPageChange(number)}>{number}</button>
+          <li key={number}>
+            <button 
+              onClick={() => onPageChange(number)}
+              className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ${
+                page === number 
+                  ? "btn-primary" 
+                  : "bg-white text-luxury-700 border border-luxury-300 hover:border-hotel-400 hover:bg-hotel-50 hover:text-hotel-700 shadow-sm hover:shadow-md"
+              }`}
+            >
+              {number}
+            </button>
           </li>
         ))}
       </ul>
