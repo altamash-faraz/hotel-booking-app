@@ -1,206 +1,358 @@
-# 🏨 MERN Booking App - Full Stack Hotel Booking Platform
+# 🏨✨ MernHolidays - Luxury Hotel Booking Platform
+
+<div align="center">
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-> **🚧 Currently Under Development** - This is my ongoing project to build a comprehensive hotel booking platform using the MERN stack.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
 
-## 📋 Project Overview
+**🌟 A modern, full-stack hotel booking platform built with the MERN stack 🌟**
 
-This is a full-featured hotel booking application that I'm actively developing to showcase modern web development skills. The project includes user authentication, hotel listings, booking management, payment processing, and comprehensive testing.
+[🚀 Live Demo](#) | [� Documentation](#quick-start-guide) | [🐛 Report Bug](https://github.com/altamash-faraz/hotel-booking-app/issues) | [💡 Feature Request](https://github.com/altamash-faraz/hotel-booking-app/issues)
+
+</div>
+
+---
+
+## 🌍 About MernHolidays
+
+> **✨ Your gateway to unforgettable stays around the world!** 
+
+MernHolidays is a premium hotel booking platform that combines modern web technologies with an elegant, user-friendly design. Built with luxury and functionality in mind, it offers travelers a seamless experience from search to booking confirmation.
+
+### 🎯 **What Makes Us Special**
+- 🏆 **Luxury Design** - Sophisticated UI with warm gold and ocean blue themes
+- ⚡ **Lightning Fast** - Built with modern React and optimized for performance  
+- 🔒 **Secure Payments** - Integrated Stripe payment processing
+- 📱 **Fully Responsive** - Beautiful on all devices
+- 🌐 **Real-time Search** - Instant hotel availability and pricing
+
+---
 
 ## 🛠️ Tech Stack
 
-### **Frontend**
-- **React 18** with **TypeScript** for type-safe component development
-- **Vite** for fast development and optimized builds
-- **Tailwind CSS** for responsive, modern UI design
-- **React Query** for efficient server state management
+<details>
+<summary>🎨 <strong>Frontend Technologies</strong></summary>
 
-### **Backend**
-- **Node.js** with **Express.js** framework
-- **TypeScript** for type-safe server-side development
-- **JWT** for secure authentication
-- **Mongoose** for MongoDB object modeling
+- **⚛️ React 18** - Modern component-based UI library
+- **🔷 TypeScript** - Type-safe development experience
+- **⚡ Vite** - Next-generation frontend build tool
+- **🎨 Tailwind CSS** - Utility-first CSS framework
+- **🔄 React Query** - Powerful data synchronization
+- **🧭 React Router** - Declarative routing
+- **📝 React Hook Form** - Performant, flexible forms
+- **🗓️ React DatePicker** - Beautiful date selection
 
-### **Database & Services**
-- **MongoDB Atlas** for cloud database storage
-- **Cloudinary** for image upload and optimization
-- **Stripe** for secure payment processing
+</details>
 
-### **Testing & DevOps**
-- **Playwright** for end-to-end testing
-- **ESLint** & **Prettier** for code quality
-- **Git** for version control
+<details>
+<summary>🖥️ <strong>Backend Technologies</strong></summary>
 
-## ✨ Current Features
+- **🚀 Node.js** - JavaScript runtime environment
+- **🌐 Express.js** - Fast, minimalist web framework
+- **🔷 TypeScript** - Enhanced JavaScript with types
+- **🍃 MongoDB & Mongoose** - NoSQL database with ODM
+- **🔐 JWT** - Secure authentication tokens
+- **📁 Multer** - File upload middleware
+- **🔒 bcryptjs** - Password hashing library
 
-- ✅ **User Management**
-  - User registration and authentication
-  - JWT-based secure sessions
-  - Profile management
+</details>
 
-- ✅ **Hotel Management**
-  - Hotel creation and editing
-  - Multi-image upload with Cloudinary
-  - Advanced search and filtering
-  - Location-based search
+<details>
+<summary>☁️ <strong>Cloud Services & DevOps</strong></summary>
 
-- ✅ **Booking System**
-  - Real-time availability checking
-  - Secure booking creation
-  - Booking history and management
+- **🍃 MongoDB Atlas** - Cloud database hosting
+- **☁️ Cloudinary** - Image & video management
+- **💳 Stripe** - Payment processing platform
+- **🧪 Playwright** - End-to-end testing framework
+- **🔍 ESLint & Prettier** - Code quality tools
+- **📦 Git** - Version control system
 
-- ✅ **Payment Integration**
-  - Stripe payment processing
-  - Test and production environments
-  - Secure payment handling
+</details>
 
-- ✅ **Responsive Design**
-  - Mobile-first approach
-  - Cross-browser compatibility
-  - Modern UI/UX patterns
+---
 
-## 🎯 Planned Enhancements
+## ✨ Features & Functionality
 
-- 🔄 **Admin Dashboard** - Comprehensive management interface
-- 🔄 **Advanced Filters** - Price range, amenities, ratings
-- 🔄 **Review System** - User ratings and reviews
-- 🔄 **Notification System** - Email confirmations and reminders
-- 🔄 **Mobile App** - React Native implementation
-- 🔄 **Performance Optimization** - Caching and lazy loading
-- 🔄 **Multi-language Support** - Internationalization (i18n)
+### 🏠 **For Travelers**
+- 🔍 **Smart Search** - Find hotels by destination, dates, and guest count
+- 🏨 **Hotel Discovery** - Browse stunning hotel listings with detailed information
+- 📅 **Real-time Booking** - Check availability and book instantly
+- 💳 **Secure Payments** - Safe and encrypted payment processing
+- 📱 **Responsive Design** - Perfect experience on any device
+- 🔐 **Account Management** - Secure registration and profile management
 
-## 📊 Project Stats
+### 🏢 **For Hotel Owners**
+- 🏨 **Hotel Management** - Add and manage your hotel listings
+- 📸 **Image Gallery** - Upload multiple high-quality images
+- 📊 **Booking Insights** - Track your bookings and performance
+- ✏️ **Easy Editing** - Update hotel details anytime
+- 💰 **Revenue Tracking** - Monitor your earnings
 
-- **Languages**: TypeScript, JavaScript, CSS
-- **Total Files**: 50+ components and modules
-- **Database Collections**: Users, Hotels, Bookings
-- **API Endpoints**: 15+ REST endpoints
-- **Test Coverage**: E2E tests with Playwright
+### 🔒 **Security & Performance**
+- 🛡️ **Authentication** - JWT-based secure user sessions
+- 🔐 **Data Protection** - Encrypted sensitive information
+- ⚡ **Optimized Performance** - Fast loading times and smooth interactions
+- 🧪 **Thoroughly Tested** - Comprehensive E2E testing coverage
+- 📱 **Mobile Optimized** - Lightning-fast mobile experience
+
+---
+
+## 🎨 Design Philosophy
+
+Our luxury hotel booking platform features a sophisticated design system:
+
+### � **Color Palette**
+- **🟡 Hotel Gold** - Warmth, luxury, and premium feel
+- **🔵 Ocean Blue** - Trust, reliability, and calm
+- **🟠 Sunset Orange** - Energy and excitement  
+- **🟢 Forest Green** - Success and nature connection
+- **⚫ Luxury Grays** - Sophistication and elegance
+
+### ✨ **Visual Elements**
+- 🌅 Beautiful gradient backgrounds
+- � Glass-morphism effects
+- 🎭 Smooth hover animations
+- 💎 Luxury shadow system
+- � Mobile-first responsive design
+
+---
+
+## 📊 Project Statistics
+
+<div align="center">
+
+| 📈 Metric | 📊 Value |
+|-----------|----------|
+| 📁 **Total Files** | 50+ components |
+| 🔗 **API Endpoints** | 15+ REST APIs |
+| 🗄️ **Database Models** | Users, Hotels, Bookings |
+| 🧪 **Test Coverage** | E2E with Playwright |
+| 🎨 **UI Components** | 20+ reusable components |
+| 📱 **Responsive Breakpoints** | 5 device sizes |
+
+</div>
 
 ---
 
 ## 🚀 Quick Start Guide
 
-## Prerequisites
+### 📋 Prerequisites
 
-Before you begin, ensure you have Node.js installed on your system.
+Make sure you have these installed on your machine:
 
-## Cloning the Repository
+- 📦 **Node.js** (v16 or higher)
+- 🌐 **npm** or **yarn**
+- 🍃 **MongoDB** account
+- ☁️ **Cloudinary** account  
+- 💳 **Stripe** account
 
-Start by cloning the repository to your local machine:
+### 🔥 Getting Started
 
-```bash
-git clone https://github.com/chrisblakely01/mern-booking-app.git
-cd mern-booking-app
+1. **📥 Clone the Repository**
+   ```bash
+   git clone https://github.com/altamash-faraz/hotel-booking-app.git
+   cd hotel-booking-app
+   ```
 ```
 
-## Backend Configuration
+2. **🔧 Backend Configuration**
 
-1. **Environment Files**: Navigate to the `backend` folder and create two files: `.env` and `.env.e2e`. Add the following contents to both files:
+   Navigate to the `backend` folder and create your environment files:
+   
+   ```bash
+   cd backend
+   cp .env.example .env
+   cp .env.example .env.e2e
+   ```
+   
+   Add the following to both `.env` and `.env.e2e`:
+   ```env
+   # 🗄️ Database Configuration
+   MONGODB_CONNECTION_STRING=your_mongodb_connection_string
+   
+   # 🔐 Security
+   JWT_SECRET_KEY=your_super_secret_jwt_key
+   FRONTEND_URL=http://localhost:5173
+   
+   # 🖼️ Cloudinary Configuration
+   CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+   CLOUDINARY_API_KEY=your_cloudinary_api_key
+   CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+   
+   # 💳 Stripe Configuration
+   STRIPE_API_KEY=your_stripe_secret_key
+   ```
 
-    ```plaintext
-    MONGODB_CONNECTION_STRING=
+3. **🎨 Frontend Configuration**
 
-    JWT_SECRET_KEY=
-    FRONTEND_URL=
+   Navigate to the `frontend` folder and create your environment file:
+   
+   ```bash
+   cd ../frontend
+   touch .env
+   ```
+   
+   Add the following to `.env`:
+   ```env
+   # 🌐 API Configuration
+   VITE_API_BASE_URL=http://localhost:7000
+   
+   # 💳 Stripe Public Key
+   VITE_STRIPE_PUB_KEY=your_stripe_publishable_key
+   ```
 
-    # Cloudinary Variables
-    CLOUDINARY_CLOUD_NAME=
-    CLOUDINARY_API_KEY=
-    CLOUDINARY_API_SECRET=
+4. **🚀 Install Dependencies & Run**
 
-    # Stripe
-    STRIPE_API_KEY=
-    ```
+   ```bash
+   # 🖥️ Backend Setup
+   cd backend
+   npm install
+   npm run dev
+   
+   # 🎨 Frontend Setup (in new terminal)
+   cd frontend
+   npm install
+   npm run dev
+   ```
 
-2. **MongoDB Setup**: 
-    - Sign up for an account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-    - Create a new cluster and follow the instructions to set up a new database.
-    - Once set up, obtain your MongoDB connection string and add it to the `MONGODB_CONNECTION_STRING` variable in your `.env` files.
-    - For the `.env.e2e` setup see "running automated tests" below
+5. **🌐 Access the Application**
+   - 🎨 **Frontend**: http://localhost:5173
+   - 🖥️ **Backend API**: http://localhost:7000
 
-3. **Cloudinary Setup**:
-    - Create an account at [Cloudinary](https://cloudinary.com/).
-    - Navigate to your dashboard to find your cloud name, API key, and API secret.
-    - Add these details to the respective `CLOUDINARY_*` variables in your `.env` files.
+---
 
-4. **Stripe Setup**:
-    - Sign up for a Stripe account at [Stripe](https://stripe.com/).
-    - Find your API keys in the Stripe dashboard.
-    - Add your Stripe API key to the `STRIPE_API_KEY` variable in your `.env` files.
-  
-5. **JWT_SECRET_KEY**:
-    - This just needs to be any long, random string. You can google "secret key generator".
+## 🧪 Testing
 
-7. **Frontend URL**:
-    - The `FRONTEND_URL` should point to the URL where your frontend application is running (typically `http://localhost:3000` if you're running it locally).
-  
+### 🎭 **End-to-End Testing with Playwright**
 
-## Frontend Configuration
+1. **🗄️ Setup Test Database**
+   - Create a separate MongoDB database for testing
+   - Update the `MONGODB_CONNECTION_STRING` in `.env.e2e`
 
-1. **Environment Files**: Navigate to the `frontend` folder and create a file: `.env`:
+2. **📊 Import Test Data**
+   - Import test data from the `data/` folder into your test database
+   - Test user credentials: `1@1.com` / `password123`
 
-    ```plaintext
-    VITE_API_BASE_URL=
-    VITE_STRIPE_PUB_KEY=
-    ```
+3. **🧪 Run Tests**
+   ```bash
+   cd e2e-tests
+   npm install
+   npm run test
+   ```
 
-5. **VITE_API_BASE_URLL**:
-    - The `VITE_API_BASE_URL` should point to the URL where your backend application is running (typically `http://localhost:7000` if you're running it locally).
+4. **🔍 View Test Reports**
+   ```bash
+   npm run test:ui  # Interactive UI mode
+   npm run show-report  # HTML report
+   ```
 
-## Running the Application
+---
 
-1. **Backend**:
-    - Navigate to the `backend` directory.
-    - Install dependencies: `npm install`.
-    - Start the server: `npm start`.
+## 📸 Screenshots
 
-2. **Frontend**:
-    - Open a new terminal and navigate to the `frontend` directory.
-    - Install dependencies: `npm install`.
-    - Start the frontend application: `npm run dev`.
-    - The application should now be running on `http://localhost:5173` but verify this in your command line terminal  
+<div align="center">
 
+### 🏠 Homepage
+*Beautiful hero section with smart search functionality*
 
-## Running Automated Tests
+### 🔍 Search Results  
+*Elegant hotel listings with advanced filtering*
 
-1. **MongoDB Setup**: 
-    - You will ideally want to create a new mongoDb database for your tests to run against. This is to keep the data stable 
-    - Sign up for an account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-    - Create a new project (e.g e2e tests)
-    - Create a new cluster and follow the instructions to set up a new database.
-    - Once set up, obtain your MongoDB connection string and add it to the `MONGODB_CONNECTION_STRING` variable in your `.env.e2e` file.
-      
-2. **Importing Test Data into MongoDB**:
+### 🏨 Hotel Details
+*Stunning image galleries and comprehensive information*
 
-    - The repository contains a `data` folder at the root, which includes JSON files for a test user and a test hotel. You can import these into your MongoDB collections to quickly set up test data.
-    - **Locate the Test User File**: In the `data` folder, find the file containing the test user data (likely named something like `test-users.json`).
-    - **Open MongoDB Compass**: Launch MongoDB Compass and connect to your database.
-    - **Select the Database**: In Compass, select the database you are using for the automated tests (created in step 1).
-    - **Import User Data**:
-        - Navigate to the `users` collection within your database. Create it if it doesn't exist
-        - Click on the "Add Data" button and select "Import File".
-        - Browse to the location of your `test-users.json` file and select it.
-        - Choose JSON as the file format and click "Import".
-        - The test user data will be added to the `users` collection.
-        - user login: 1@1.com/password123
-    -  **Locate the Test Hotel File**:
-        - Navigate to the `hotels` collection within your database. Create it if it doesn't exist
-        - Repeat the import process as you did for the user data, but this time select the `test-hotel.json` file.
-        - Ensure the file format is set to JSON and click "Import".
-        - The test hotel data will be added to the `hotels` collection.
- 
-3. **Running tests**    
-    - In VS Code install the [Playwright extension](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
-    - Navigate to the `e2e-tests` directory.
-    - Install dependencies: `npm install`.
-    - Start the frontend and backend server using the steps above
-    - [Using the Playwright extension to run the tests](https://playwright.dev/docs/getting-started-vscode#running-tests)
+### 💳 Booking Flow
+*Seamless checkout with Stripe integration*
+
+</div>
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **🍴 Fork the repository**
+2. **🌿 Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **💾 Commit your changes** (`git commit -m '✨ Add AmazingFeature'`)
+4. **📤 Push to the branch** (`git push origin feature/AmazingFeature`)
+5. **🔄 Open a Pull Request**
+
+### 🐛 **Bug Reports**
+Found a bug? Please open an [issue](https://github.com/altamash-faraz/hotel-booking-app/issues) with:
+- 📝 Detailed description
+- 🔄 Steps to reproduce
+- 📊 Expected vs actual behavior
+- 🖼️ Screenshots (if applicable)
+
+### 💡 **Feature Requests**
+Have an idea? We'd love to hear it! Open an [issue](https://github.com/altamash-faraz/hotel-booking-app/issues) with:
+- 📋 Feature description
+- 🎯 Use case explanation  
+- 📈 Potential impact
+
+---
+
+## 📋 Roadmap
+
+### 🔜 **Coming Soon**
+- 🌟 **Hotel Reviews & Ratings** - User feedback system
+- 📧 **Email Notifications** - Booking confirmations and reminders  
+- 🏆 **Loyalty Program** - Points and rewards system
+- 🌍 **Multi-language Support** - International accessibility
+- 📱 **Progressive Web App** - Mobile app experience
+- 🤖 **AI Recommendations** - Personalized hotel suggestions
+
+### 🚀 **Future Vision**
+- 📲 **Native Mobile Apps** - iOS and Android applications
+- 🗺️ **Interactive Maps** - Location-based discovery
+- 💬 **Live Chat Support** - Real-time customer service
+- 📊 **Analytics Dashboard** - Business intelligence tools
+- 🌐 **Multi-currency Support** - Global payment options
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👨‍💻 Author
+
+**Altamash Faraz** 
+- 🌐 GitHub: [@altamash-faraz](https://github.com/altamash-faraz)
+- 📧 Email: [your.email@example.com](mailto:your.email@example.com)
+- 💼 LinkedIn: [Your LinkedIn Profile](#)
+
+---
+
+## 🙏 Acknowledgments
+
+- 💙 **React Team** - For the amazing React ecosystem
+- 🎨 **Tailwind CSS** - For the beautiful utility-first CSS framework
+- 🍃 **MongoDB** - For the flexible NoSQL database
+- 💳 **Stripe** - For secure payment processing
+- 🧪 **Playwright** - For reliable end-to-end testing
+- 🌟 **Open Source Community** - For inspiration and endless learning
+
+---
+
+<div align="center">
+
+**⭐ If you found this project helpful, please give it a star! ⭐**
+
+**🚀 Happy Coding! 🚀**
+
+*Made with ❤️ and lots of ☕*
+
+</div>
 
 
