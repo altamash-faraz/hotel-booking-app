@@ -9,15 +9,8 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
-
 **🌟 A modern, full-stack hotel booking platform built with the MERN stack 🌟**
-
-[🚀 Live Demo](#) | [� Documentation](#quick-start-guide) | [🐛 Report Bug](https://github.com/altamash-faraz/hotel-booking-app/issues) | [💡 Feature Request](https://github.com/altamash-faraz/hotel-booking-app/issues)
-
 </div>
-
 ---
 
 ## 🌍 About MernHolidays
@@ -25,16 +18,7 @@
 > **✨ Your gateway to unforgettable stays around the world!** 
 
 MernHolidays is a premium hotel booking platform that combines modern web technologies with an elegant, user-friendly design. Built with luxury and functionality in mind, it offers travelers a seamless experience from search to booking confirmation.
-
-### 🎯 **What Makes Us Special**
-- 🏆 **Luxury Design** - Sophisticated UI with warm gold and ocean blue themes
-- ⚡ **Lightning Fast** - Built with modern React and optimized for performance  
-- 🔒 **Secure Payments** - Integrated Stripe payment processing
-- 📱 **Fully Responsive** - Beautiful on all devices
-- 🌐 **Real-time Search** - Instant hotel availability and pricing
-
 ---
-
 ## 🛠️ Tech Stack
 
 <details>
