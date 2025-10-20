@@ -25,8 +25,6 @@ MernHolidays is a premium hotel booking platform that combines modern web techno
 <summary>🎨 <strong>Frontend Technologies</strong></summary>
 
 - **⚛️ React 18** - Modern component-based UI library
-- **🔷 TypeScript** - Type-safe development experience
-- **⚡ Vite** - Next-generation frontend build tool
 - **🎨 Tailwind CSS** - Utility-first CSS framework
 - **🔄 React Query** - Powerful data synchronization
 - **🧭 React Router** - Declarative routing
